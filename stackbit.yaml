@@ -19,16 +19,6 @@ metadata:
   images:
     small: images/demo-256x192.png
     large: images/demo-1024x768.png
-pageData:
-  - pagePath: "/"
-    initialExpandedPaths:
-      - '[0]'
-      - '[0].fields.sections'
-      - '[0].fields.sections.items[0]'
-      - '[0].fields.sections.items[0].fields.title'
-      - '[0].fields.sections.items[0].fields.content'
-      - '[1]'
-      - '[1].fields.palette'
 models:
   config:
     type: config
@@ -542,6 +532,7 @@ models:
             - noimageindex
             - notranslate
             - none
+        default: [all]
       - type: list
         name: extra
         label: Extra
